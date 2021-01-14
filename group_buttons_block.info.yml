@@ -1,0 +1,8 @@
+name: 'Group Buttons Block'
+type: module
+description: 'Adds buttons for the group module and provides a hook to add new buttons'
+version: '8.x-1.0'
+core: 8.x
+package: 'Group'
+dependencies:
+  - group

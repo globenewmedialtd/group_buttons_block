@@ -1,0 +1,7 @@
+group_buttons_block.admin_config_group:
+  path: '/admin/config/group'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Group'
+  requirements:
+    _permission: 'access administration pages'

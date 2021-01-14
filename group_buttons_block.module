@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Contains group_welcome_message.module.
+ */
+
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Routing\Access\AccessInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function group_buttons_block_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the social_welcome_message module.
+    case 'help.page.group_welcome_message':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Adds welcome messages for Group') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+

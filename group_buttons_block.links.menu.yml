@@ -1,0 +1,7 @@
+# Group Buttons Block menu items definition
+group_buttons_block.admin_config_group:
+  title: 'Group'
+  route_name: group_buttons_block.admin_config_group
+  parent: system.admin_config
+  description: 'Settings for Group'
+  weight: 0
